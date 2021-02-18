@@ -1,5 +1,4 @@
 <?php
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -19,7 +18,9 @@ $id = $todo->set([
     'c1r3' => '0',
     'c2r3' => '0',
     'c3r3' => '0',
+    'next-to-move' => '0',
 ]);
-echo "ID: $id";
-if ($id > 0){
-    header('location'/?game)
+
+if ($id > 0) {
+    header("location: /?game-id=$id");
+}

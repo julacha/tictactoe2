@@ -1,12 +1,22 @@
 /** @format */
 
 .container {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    margin: auto;
-    height: 400px;
-    width: 400px;
-  }
-  .container a {
-    border: 1px solid darkgray;
-  }
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  margin: auto;
+  height: 400px;
+  width: 400px;
+}
+.container a {
+  border: 1px solid darkgray;
+  font-size: 100px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid black;
+}
