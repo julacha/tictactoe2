@@ -4,9 +4,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 include 'DB.php';
 
-$todo = new DB('game');
+$game = new DB('tictactoe');
 
-$id = $todo->set([
+$id = $game->set([
     'c1r1' => '0',
     'c2r1' => '0',
     'c3r1' => '0',
